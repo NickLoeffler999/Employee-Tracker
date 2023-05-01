@@ -28,7 +28,7 @@ CREATE TABLE employee (
     -- This will hold the reference to role that the employee has.
     role_id INT NOT NULL,
     FOREIGN KEY (role_id) REFERENCES role(id),
-    -- This wil lhold the reference to the manager of another employee.
+    -- This wil hold the reference to the manager of another employee.
     manager_id INT NOT NULL,
     FOREIGN KEY (manager_id) REFERENCES role(id),
     PRIMARY KEY (id)
